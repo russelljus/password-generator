@@ -9,15 +9,24 @@ var upperCaseArray = [  'A',  'B',  'C',  'D',  'E',  "F",  'G',  'H',  'I',  'J
 
 function userInput () {
     // prompts command for user input
-    var charaterLength = prompt ("how long do you want your password to be?")
-    console.log (charaterLength)
+    var characterLength = prompt ("how long do you want your password to be?")
+    console.log (characterLength)
     // Confirms return a boolean value
     var upperCase = confirm ("do you want uppercase letters in your password?")
     var lowerCase = confirm ("do you want lowercase characters in your password?")
     var numbers = confirm ("do you want numbers in your password?")
     var special = confirm ("do you want special characters in your password?")
 
-
+    var actualUserChoice = {
+        howLong: characterLength, 
+        HasUpperCase: upperCase,
+        HasLowerCase: lowerCase,
+        HasSpecialCharacters: special,
+        HasNumbers: numbers,
+        // Key: value (comes from user input)
+    }
+    console.log (actualUserChoice)
+    return actualUserChoice
 }
 
 
