@@ -6,6 +6,15 @@ var specialCharactersArray = [  '@',  '%',  '+',  '\\',  '/',  "'",  '!',  '#', 
 var lowerCaseArray = [  'a',  'b',  'c',  'd',  'e',  "f",  'g',  'h',  'i',  'j',  'k',  'l',  'm',  'n',  'o',  'p',  'q',  'r',  's',  't',  'u',  'v',  'w',  'x',  'y',  'z'];
 var upperCaseArray = [  'A',  'B',  'C',  'D',  'E',  "F",  'G',  'H',  'I',  'J',  'K',  'L',  'M',  'N', 'O',  'P',  'Q',  'R',  'S',  'R',  'U',  'V',  'W',  'X',  'Y',  'Z'];
 
+function random (array){
+    var grabRandomIndex = Math.floor(Math.random()* array.length) // Creates a random index based on the length of the array that function uses
+
+    var convertedIndex = array [grabRandomIndex] // if chose uppercase array and grab randome index retuns 2 
+    // then converted index would look like upperCaseArray[2] = "C"  (basically the array name and index value lowerCaseArray[5] == "f" )
+
+    return convertedIndex
+}
+
 
 function userInput () {
     // prompts command for user input
@@ -30,6 +39,30 @@ function userInput () {
 }
 
 
+function generatePassword () {
+    var UserOptions = userInput() // this variable calls user input funciton, which makes actual user object in line 29 available
+    var generatedPassword = []
+    var availableCharacters = []
+
+    if (UserOptions.HasSpecialCharacters) {
+        availableCharacters = availableCharacters.concat(specialCharactersArray)
+        availableCharacters.push (random(specialCharactersArray))
+    }
+
+    if (UserOptions.HasUpperCase) {
+        availableCharacters = availableCharacters.concat(upperCaseArray)
+        availableCharacters.push (random(upperCaseArray))
+    }
+    // Need if blocks for numbers and lowercase 
+
+    for(var i = 0; i < UserOptions.howLong; i++) {
+        var stagedPassword = random(availableCharacters)//randomizes everything we pushed into the characters array 
+        generatedPassword.push(stagedPassword)
+    }
+
+    console.log (generatedPassword)
+    return generatedPassword.join("")
+}
 
 
 
@@ -39,7 +72,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-    var password = userInput();
+    var password = generatePassword();
     var passwordText = document.querySelector("#password");
   
     passwordText.value = password;
