@@ -11,7 +11,7 @@ so that I can create a strong password that provides greater security.
 <h2> About:</h2>
 
 Created an application that generates a random password based on user-selected criteria. The citeria is as follows:
-  <li>Special characters?</li>
+  <ui>Special characters?</ui>
   <li>Upper Case Letters?</li>
   <li>Lower Case Letters?</li>
   <li>Numeric Numbers?</li>
