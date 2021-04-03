@@ -16,10 +16,20 @@ function random (array){
 }
 
 
+
 function userInput () {
     // prompts command for user input
-    var characterLength = prompt ("how long do you want your password to be?")
+    var characterLength = parseInt(prompt ("how long do you want your password to be?"))
     console.log (characterLength)
+    if (characterLength < 8) {
+        alert("password must be at least 8 characters long")
+        return
+
+    }
+    if (characterLength > 128) {
+        alert ("password must be less than 128 characters long")
+        return
+    }
     // Confirms return a boolean value
     var upperCase = confirm ("do you want uppercase letters in your password?")
     var lowerCase = confirm ("do you want lowercase characters in your password?")
@@ -44,8 +54,8 @@ function generatePassword () {
     var generatedPassword = []
     var availableCharacters = []
 
-    if (UserOptions.HasSpecialCharacters) {
-        availableCharacters = availableCharacters.concat(specialCharactersArray)
+    if (UserOptions.HasSpecialCharacters) { //refrences key in user input object as true or false
+        availableCharacters = availableCharacters.concat(specialCharactersArray) //refrences the top of the script.js
         availableCharacters.push (random(specialCharactersArray))
     }
 
