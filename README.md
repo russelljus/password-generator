@@ -15,7 +15,7 @@ Created an application that generates a random password based on user-selected c
   <li>Upper Case Letters?</li>
   <li>Lower Case Letters?</li>
   <li>Numeric Numbers?</li>
-  <li>No less than 10 Characters.</li>
+  <li>No less than 8 Characters.</li>
   <li>No more than 128 Characters.</li>
 
 
