@@ -11,10 +11,10 @@ so that I can create a strong password that provides greater security.
 <h2> About:</h2>
 
 Created an application that generates a random password based on user-selected criteria. The citeria is as follows:
-  <li>Special characters?</li>
-  <li>Upper Case Letters?</li>
-  <li>Lower Case Letters?</li>
-  <li>Numeric Numbers?</li>
+  <li>Special characters</li>
+  <li>Upper Case Letters</li>
+  <li>Lower Case Letters</li>
+  <li>Numeric Numbers</li>
   <li>No less than 8 Characters.</li>
   <li>No more than 128 Characters.</li>
 
