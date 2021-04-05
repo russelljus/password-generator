@@ -1,5 +1,4 @@
-<img width="1440" alt="Screen Shot 2021-04-04 at 8 55 25 PM" src="https://user-images.githubusercontent.com/79387241/113532231-1841fa00-9588-11eb-9346-059ceccd8c57.png">
-![Screen Shot 2021-04-04 at 8 55 25 PM (2)](https://user-images.githubusercontent.com/79387241/113532235-1aa45400-9588-11eb-8535-1a48b45f0986.png)
+
 
 <h1>Password Generator</h1>
 
@@ -19,6 +18,9 @@ Created an application that generates a random password based on user-selected c
   <li>Numeric Numbers</li>
   <li>No less than 8 Characters.</li>
   <li>No more than 128 Characters.</li>
+  
+  <img width="1440" alt="Screen Shot 2021-04-04 at 8 55 25 PM" src="https://user-images.githubusercontent.com/79387241/113532231-1841fa00-9588-11eb-9346-059ceccd8c57.png">
+![Screen Shot 2021-04-04 at 8 55 25 PM (2)](https://user-images.githubusercontent.com/79387241/113532235-1aa45400-9588-11eb-8535-1a48b45f0986.png)
 
 
  You also have the ability to capture the generated password and save it to your clipboard. 
