@@ -27,6 +27,7 @@ Created an application that generates a random password based on user-selected c
   
 
 
+<img width="1440" alt="Screen Shot 2021-04-04 at 9 08 41 PM" src="https://user-images.githubusercontent.com/79387241/113533108-55a78700-958a-11eb-9f8c-5e0cd57dde18.png">
 
 
 
