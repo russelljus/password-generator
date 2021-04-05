@@ -19,6 +19,9 @@ Created an application that generates a random password based on user-selected c
   <li>No more than 128 Characters.</li>
 
 
+ You also have the ability to capture the generated password and save it to your clipboard. 
+
+
 
 <img width="1440" alt="Screen Shot 2021-04-02 at 3 17 58 PM" src="https://user-images.githubusercontent.com/79387241/113454972-bc7c4300-93c6-11eb-8ccc-cc2fe9be851a.png">
 
