@@ -72,7 +72,7 @@ function generatePassword () {
         availableCharacters.push (random (numberArray))
     }
 
-    if (UserOptions.lowerCaseArray) {
+    if (UserOptions.HaslowerCase) {
         availableCharacters = availableCharacters.concat(lowerCaseArray)
         availableCharacters.push (random (lowerCaseArray))
     }
