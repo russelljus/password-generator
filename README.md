@@ -1,5 +1,6 @@
 
 
+
 <h1>Password Generator</h1>
 
 
@@ -24,8 +25,6 @@ Created an application that generates a random password based on user-selected c
  
 
   
-
-
 
 
 
