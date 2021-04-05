@@ -22,7 +22,7 @@ Created an application that generates a random password based on user-selected c
   
  You also have the ability to capture the generated password and save it to your clipboard. 
   
-<
+
 
 
 
